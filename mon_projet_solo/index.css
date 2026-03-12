@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+
+}
+
+body{
+    height: 120vh;
+}
+header{
+    height: 150px;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+#Logo{
+    padding: 15px;
+}
+#Logo img{
+height: 120px;
+width: 120px;
+ /* border: 1px solid black; */
+}
+
+.nav-links{
+    color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 50px;
+}
+.nav-links li{
+    list-style: none;
+}
+.nav-links a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+#presentation{
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+    font-size: 37px;
+    padding: 50px;
+   
+}
+#Theme{
+ text-align: center;
+    font-family: 'Poppins',sans-serif;
+    font-size: 37px;
+    padding: 40px;
+}
+#Annonce{
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+    font-size: 37px;
+    padding: 70px;
+
+}
+/* début du corps */
+#boder{
+    height: 970px;
+    width: 97%;
+    /* border: 1px solid rgb(177, 24, 24); */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+/* page N°1 de la place  */
+.mise_en_page{
+    height: 420px;
+    width: 80%;
+/* border: 1px solid black; */
+gap: 400px;
+display: flex;
+    padding: 20px;
+    justify-content: center;
+  margin: 0 auto;
+   text-align: center;
+}
+.mise_en_page_image img{
+    height: 400px;
+    width: 100%;
+    /* border: 1px solid rgb(204, 116, 116); */
+    padding: 10px;
+    background-color: #fffdf150;
+}
+.mise_en_page_texte{
+    height: 100%;
+    width: 50%;
+     /* border: 1px solid rgb(18, 17, 17); */
+     text-align: center;
+     align-items: center;
+     display: flex;
+     background-color: #fffdf13c;
+}
+.mise_en_page_texte p{
+font-family: 'Poppins',sans-serif;
+font-size: 35px;
+
+}
+/* la partie deux de la page  */
+
+.mise_en_page_deuxième{
+     height: 420px;
+    width: 80%;
+/* border: 1px solid black; */
+gap: 400px;
+display: flex;
+    padding: 20px;
+    justify-content: center;
+  margin: 0 auto;
+   text-align: center;
+   
+}
+.mise_en_page_image_page img{
+    height: 400px;
+    width: 100%;
+    /* border: 1px solid rgb(204, 116, 116); */
+    background-color: #fffdf150;
+}
+.mise_en_page_texte_page{
+    height: 100%;
+    width: 50%;
+     /* border: 1px solid rgb(18, 17, 17); */
+     text-align: center;
+     align-items: center;
+     display: flex;
+     background-color: #fffdf142;
+}
+.mise_en_page_texte_page p{
+font-family: 'Poppins',sans-serif;
+font-size: 35px;
+
+}
+/* mise en place des Leader */
+
+#Leader{
+font-family: 'poppise',sans-serif;
+font-size: 30px;
+text-align: center;
+padding: 30px;
+}
+ /* mise page des imag des Leader  */
+
+ #Leader_image{
+    height: 850px;
+    width: 95%;
+    border: 2px solid rgb(0, 0, 0);
+    display: flex;
+    margin: 0 auto;
+    padding: 10px;
+ }
+.texte_image{
+    height: 800px;
+    width: 100%;
+    border: 1px solid rgb(196, 40, 40);
+     display: flex;
+     justify-content: space-around;
+   padding: 10px;
+align-items: center;
+     
+
+}
+.texte_box_image img{
+    height: 660px;
+    width: 500px;
+    border: 2px solid rgb(22, 254, 239);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center ;
+    border-radius: 40px;
+}
+.texte_box_image h3{
+  text-align: center;
+  padding: 10px;
+  font-family: 'poppise'sans-serif;
+  font-size: 30px;
+}
