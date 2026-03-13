@@ -54,13 +54,27 @@ width: 120px;
     font-size: 37px;
     padding: 40px;
 }
+/* jeux de .annonce_animation */
 #Annonce{
-    text-align: center;
+  
     font-family: 'Poppins',sans-serif;
     font-size: 37px;
     padding: 70px;
-
 }
+.annonce_animation {
+
+animation: Zebi 5s ease infinite;
+}
+
+@keyframes Zebi{
+    from {
+        transform: translate(300px);
+    }
+    to {
+        transform: translateX(-750px);
+    }
+}
+
 /* début du corps */
 #boder{
     height: 970px;
@@ -90,7 +104,7 @@ display: flex;
     width: 100%;
     /* border: 1px solid rgb(204, 116, 116); */
     padding: 10px;
-    background-color: #fffdf150;
+    /* background-color: #fffdf150; */
 }
 .mise_en_page_texte{
     height: 100%;
@@ -124,7 +138,7 @@ display: flex;
     height: 400px;
     width: 100%;
     /* border: 1px solid rgb(204, 116, 116); */
-    background-color: #fffdf150;
+    /* background-color: #fffdf150; */
 }
 .mise_en_page_texte_page{
     height: 100%;
@@ -134,54 +148,125 @@ display: flex;
      align-items: center;
      display: flex;
      background-color: #fffdf142;
+    
 }
 .mise_en_page_texte_page p{
 font-family: 'Poppins',sans-serif;
 font-size: 35px;
+    
 
 }
+
 /* mise en place des Leader */
 
 #Leader{
 font-family: 'poppise',sans-serif;
 font-size: 30px;
 text-align: center;
-padding: 30px;
+padding: 35px;
 }
  /* mise page des imag des Leader  */
 
  #Leader_image{
-    height: 850px;
-    width: 95%;
-    border: 2px solid rgb(0, 0, 0);
+    height: 650px;
+    width: 90%;
+    /* border: 2px solid rgb(0, 0, 0); */
     display: flex;
     margin: 0 auto;
-    padding: 10px;
+    padding: 15px;
  }
 .texte_image{
-    height: 800px;
+    height: 600px;
     width: 100%;
-    border: 1px solid rgb(196, 40, 40);
+    /* border: 1px solid rgb(196, 40, 40); */
      display: flex;
      justify-content: space-around;
-   padding: 10px;
+   padding: 15px;
 align-items: center;
      
 
 }
 .texte_box_image img{
-    height: 660px;
-    width: 500px;
-    border: 2px solid rgb(22, 254, 239);
+    height: 490px;
+    width: 360px;
+    /* border: 2px solid rgb(22, 254, 239); */
     display: flex;
-    justify-content: center;
-    text-align: center;
+    justify-content: center;    
     align-items: center ;
-    border-radius: 40px;
+    border-radius: 30px;
+box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+
 }
 .texte_box_image h3{
   text-align: center;
   padding: 10px;
   font-family: 'poppise'sans-serif;
-  font-size: 30px;
+  font-size: 25px;
+}
+/* mise en place de la partie du footeur  */
+
+#Fin_du_site{
+    height:600px;
+    width: 100%;
+    /* border: 2px solid rgb(208, 54, 54); */
+   display: flex;
+   justify-content: space-around;
+   flex-direction: column;
+   align-items: center;
+   background-color: black;
+}
+.information{
+height: 75%;
+width: 100%;
+/* border: 1px solid rgb(27, 101, 197); */
+display: flex;
+justify-content: space-around;
+gap: 10px;
+
+}
+
+.forter_fin_texte h3{
+    color: aliceblue;
+}
+
+.forter_fin{
+    height:80%;
+    width: 20%;
+     align-items: center;
+     background-color: black;
+padding: 20px; 
+}
+
+
+.forter_fin_texte{
+    font-size: 32px;
+padding: 10px;
+    font-family: 'poppis' sans-serif;
+
+
+}
+ul{
+     list-style: none;
+     padding: 10px;
+     font-family: 'poppis'sans-serif;
+     font-size: 24px;
+     color: aliceblue;
+}
+.forter_fin span{
+    color: aliceblue;
+    padding: 10px;
+    font-size: 30px;
+    margin: 10px;
+    display: flex;
+}
+ /* mise en reference */
+.reference{
+height: 20%;
+width: 100%;
+
+}
+.reference p{
+    font-family: 'poppis' sans-serif;
+    font-size: 27px;
+    color: aliceblue;
 }
