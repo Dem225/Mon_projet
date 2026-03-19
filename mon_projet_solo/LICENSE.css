@@ -67,11 +67,14 @@ width: 120px;
   text-overflow: ellipsis;
   text-align: center;
   align-items: center;
+ 
 }
 .page_box_image img{
  height: 560px;
  width: 487px;
 border-radius: 30px;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
 }
 .page_box_image{
 font-family: 'poppis' sans-serif;
@@ -92,24 +95,9 @@ margin-top: 45px;
 #consigne h3{
 font-family: Arial, Helvetica, sans-serif;
 font-size: 30px;
-
- /* animation: Zebi 17s ease infinite; */
   animation: zebi 10s ease infinite;
 }
 
-/* @keyframes Zebi {
-  from { transform: translateX(100%); }
-  to { transform: translateX(-100%); }
-} */
-/* @keyframes zebi {
-  from {
-    transform: translate(390px);
-  }
-
-  to {
-    transform: translateX(-100%);
-  }
-} */
 
 
  /* CONSEIL ET PRATIQUE  */
@@ -117,7 +105,6 @@ font-size: 30px;
  #case_boxe{
     height: 880px;
     width: 100%;
-    border: 2px solid rgb(121, 30, 30);
     margin-top: 50px;
     display: flex;
     justify-content: space-around;
@@ -129,7 +116,7 @@ font-size: 30px;
  .case_mini{
     height: 94%;
     width: 32%;
-     border: 1px solid black;
+     
        overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -137,6 +124,9 @@ font-size: 30px;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  border-radius: 15px;
+  background-color: white;
  }
 
  /* mise en place de icone  */
@@ -211,6 +201,7 @@ font-size: 30px;
     font-size: 27px;
 margin-top: 70px;
 padding: 10px;
+
 }
 
 #droit_espace{

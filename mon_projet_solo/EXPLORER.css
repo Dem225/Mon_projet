@@ -71,6 +71,7 @@ overflow: hidden;
 height: 350px;
 width: 530px;
 border-radius: 45px;
+box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 #sous_titre{
     height: 530px;
@@ -84,11 +85,18 @@ border-radius: 45px;
 }
 /* MISE EN PLACE DU TEXTE  */
 .sous_texte{
-    height: 100%;
-    width: 42%;
+    height: 80%;
+    width: 40%;
     text-overflow: ellipsis;
    overflow: hidden;
     white-space: inherit;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+
+ 
+    border-radius: 15px;
     
 }
 .sous_texte p{
@@ -123,14 +131,12 @@ align-items: center;
 text-align: center;
 display: flex;
 justify-content: center;
-
-
 }
 .mini_box_image img{
     height:680px ;
     width:530px;
     border-radius: 30px;
-   
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   
     display:flex ;
     
