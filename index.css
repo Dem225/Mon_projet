@@ -10,13 +10,15 @@ body{
     background: #EFF2FD;
 }
 header{
-    height: 150px;
+     height: 150px;
     width: 100%;
     /* border: 1px solid black; */
     display: flex;
     justify-content: space-between;
     padding: 5px;
 }
+   
+
 #Logo{
     padding: 15px;
 }
@@ -277,3 +279,103 @@ width: 100%;
 
 /* How does the Responsible website do it? */
 
+/* Pour les tablettes et écrans moyens */
+@media screen and (max-width: 1024px) {
+    .nav-links {
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .mise_en_page, .mise_en_page_deuxième {
+        gap: 50px; /* Réduction du gap de 400px qui cassait la mise en page */
+        width: 95%;
+    }
+
+    .texte_box_image img {
+        width: 220px;
+        height: auto;
+    }
+}
+
+/* Pour les mobiles (Smartphones) */
+@media screen and (max-width: 768px) {
+    
+    /* Header & Navigation */
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .nav-links {
+        gap: 10px;
+        padding: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Sections principales */
+    #presentation, #Annonce, #Leader {
+        font-size: 24px;
+        padding: 20px;
+    }
+
+    /* Le corps du texte (Border) */
+    #boder {
+        height: auto; /* On enlève la hauteur fixe pour laisser le contenu respirer */
+        gap: 50px;
+    }
+
+    .mise_en_page, .mise_en_page_deuxième {
+        flex-direction: column; /* On empile l'image et le texte */
+        height: auto;
+        gap: 20px;
+        width: 90%;
+    }
+
+    .mise_en_page_deuxième {
+        flex-direction: column-reverse; /* Pour garder une harmonie visuelle sur mobile */
+    }
+
+    .mise_en_page_image img, .mise_en_page_image_page img {
+        height: auto;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .mise_en_page_texte, .mise_en_page_texte_page {
+        width: 100%;
+    }
+
+    /* Section Leaders */
+    #Leader_image {
+        height: auto;
+    }
+
+    .texte_image {
+        flex-direction: column;
+        height: auto;
+        gap: 30px;
+    }
+
+    /* Footer */
+    #Fin_du_site {
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .information {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .forter_fin {
+        width: 80%;
+        height: auto;
+    }
+
+    .forter_fin span {
+        justify-content: center;
+    }
+}
