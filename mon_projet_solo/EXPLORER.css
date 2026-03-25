@@ -78,7 +78,7 @@ overflow: hidden;
 }
 .mini_photo img{
 height: 300px;
-width: 490px;
+width: 360px;
 border-radius: 45px;
 box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
@@ -109,7 +109,7 @@ box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .sous_texte p{
     font-family: 'poppise'sans-serif;
-    font-size: 23px;
+    font-size: 25px;
        overflow: auto;
        text-overflow: ellipsis;
    
@@ -141,8 +141,8 @@ display: flex;
 justify-content: center;
 }
 .mini_box_image img{
-    height:500px ;
-    width:350px;
+    height:400px ;
+    width:300px;
     border-radius: 30px;
    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     display:flex ;
@@ -159,7 +159,7 @@ justify-content: center;
    
 }
 #resouce_texte p{
-    font-size: 20px;
+    font-size: 23px;
     font-family: serif;
 
 }
