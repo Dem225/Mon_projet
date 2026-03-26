@@ -6,7 +6,7 @@
 }
 
 body{
-    height: 120vh;
+    /* height: 120vh; */
      background: #EFF2FD;
 }
 
@@ -77,7 +77,7 @@ overflow: hidden;
 overflow: hidden;
 }
 .mini_photo img{
-height: 300px;
+height: 310px;
 width: 360px;
 border-radius: 45px;
 box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -325,6 +325,7 @@ body {
         height: auto !important;
         display: flex;
         justify-content: center;
+        
     }
 
     .mini_photo img, .mini_box_image img {
@@ -332,6 +333,7 @@ body {
         max-width: 500px; /* Évite que l'image soit trop géante sur tablette */
         height: auto !important;
         object-fit: cover;
+       
     }
 
     /* 4. Adaptation des blocs de texte */
