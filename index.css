@@ -299,6 +299,7 @@ width: 100%;
 }
 
 /* Pour les mobiles (Smartphones) */
+
 @media screen and (max-width: 768px) {
     
     /* Header & Navigation */
