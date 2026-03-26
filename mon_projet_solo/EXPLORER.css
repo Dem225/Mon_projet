@@ -284,3 +284,98 @@ width: 100%;
     color: aliceblue;
 }
 
+/* kjhfjkkkkkkkkkkkkkkkkkkkkkkkkkkkkkjkfhiofhhff */
+
+
+/* ============================================================
+   PARTIE RESPONSIVE (MOBILE & TABLETTE)
+   ============================================================ */
+
+@media screen and (max-width: 1024px) {
+    /* Ajustement global pour Tablettes */
+    #page_photo, #sous_titre, #box_image {
+        height: auto; /* On laisse le contenu respirer */
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .mini_photo, .mini_box_image, .sous_texte {
+        width: 100%; /* Prend toute la largeur */
+        height: auto;
+    }
+
+    .mini_photo img, .mini_box_image img {
+        width: 100%; /* L'image s'adapte à la largeur du téléphone */
+        height: auto;
+        max-width: 500px; /* Évite que l'image soit trop géante */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Header Responsive */
+    header {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+
+    .nav-links {
+        padding: 10px;
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Sous-titres et Textes */
+    #sous_titre {
+        margin-top: 20px;
+    }
+
+    .sous_texte {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .sous_texte p, #resouce_texte p {
+        font-size: 16px; /* Texte plus lisible sur mobile */
+    }
+
+    /* Footer Responsive */
+    #Fin_du_site {
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .information {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 30px;
+        gap: 30px;
+    }
+
+    .forter_fin {
+        width: 90%;
+        height: auto;
+    }
+
+    /* Animation des icônes (mere) */
+    #mere {
+        flex-wrap: wrap;
+        max-height: none;
+        height: auto;
+    }
+}
+
+/* Fix pour éviter le défilement horizontal (scroll bar inutile) */
+body {
+    overflow-x: hidden;
+    height: auto; /* Remplace le 120vh qui bloquait la page */
+}
+
+/* Correction des overflow cachés qui coupaient ton texte */
+#page_photo, .mini_photo, .sous_texte, #box_image, .mini_box_image {
+    overflow: visible !important;
+    white-space: normal !important;
+}
