@@ -78,7 +78,7 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -87,18 +87,18 @@ button {
 
 }
 
-.page_box_image img {
+.page_box_image img{
     height: 400px;
     width: 300px;
-    border-radius: 30px;
+    border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
 
 }
 
-.page_box_image {
+.page_box_image h6{
     font-family: 'poppis' sans-serif;
-    font-size: 20px;
+    font-size: 8px;
 }
 
 /* place au consigne  */
@@ -354,9 +354,9 @@ span p {
     color: aliceblue;
 }
 
-/* ============================================================
+/* 
    AJOUT DU RESPONSIVE (À METTRE À LA FIN DU FICHIER CSS)
-   ============================================================ */
+   */
 
 /* Pour les tablettes (max 1024px) */
 @media screen and (max-width: 1024px) {
@@ -397,7 +397,7 @@ span p {
 
     /* Section des images de peur */
     .page_box {
-        flex-direction: column;
+        display: flex !important;
         height: auto;
         gap: 40px;
     }

@@ -284,98 +284,111 @@ width: 100%;
     color: aliceblue;
 }
 
-/* kjhfjkkkkkkkkkkkkkkkkkkkkkkkkkkkkkjkfhiofhhff */
+/* 
+   SECTION RESPONSIVE UNIVERSELLE
+  */
 
-
-/* ============================================================
-   PARTIE RESPONSIVE (MOBILE & TABLETTE)
-   ============================================================ */
-
-@media screen and (max-width: 1024px) {
-    /* Ajustement global pour Tablettes */
-    #page_photo, #sous_titre, #box_image {
-        height: auto; /* On laisse le contenu respirer */
-        flex-direction: column;
-        gap: 20px;
-        padding: 20px;
-    }
-
-    .mini_photo, .mini_box_image, .sous_texte {
-        width: 100%; /* Prend toute la largeur */
-        height: auto;
-    }
-
-    .mini_photo img, .mini_box_image img {
-        width: 100%; /* L'image s'adapte à la largeur du téléphone */
-        height: auto;
-        max-width: 500px; /* Évite que l'image soit trop géante */
-    }
+/* 1. Reset global pour le mobile */
+body {
+    height: auto !important; /* Annule le 120vh */
+    overflow-x: hidden;
 }
 
-@media screen and (max-width: 768px) {
-    /* Header Responsive */
+/* 2. Adaptation du Header */
+@media screen and (max-width: 900px) {
     header {
         height: auto;
         flex-direction: column;
         align-items: center;
-        padding-bottom: 20px;
+        padding: 20px 0;
     }
-
     .nav-links {
-        padding: 10px;
-        gap: 15px;
+        padding: 15px;
+        gap: 20px;
         flex-wrap: wrap;
         justify-content: center;
     }
+}
 
-    /* Sous-titres et Textes */
+/* 3. Alignement Vertical des Images (Mobiles & Tablettes) */
+@media screen and (max-width: 1024px) {
+    #page_photo, #box_image {
+        height: auto !important;
+       display: flex !important;
+        align-items: center !important;
+        gap: 40px;
+        padding: 40px 10px;
+    }
+
+    .mini_photo, .mini_box_image {
+        width: 90% !important;
+        height: auto !important;
+        display: flex;
+        justify-content: center;
+    }
+
+    .mini_photo img, .mini_box_image img {
+        width: 100% !important;
+        max-width: 500px; /* Évite que l'image soit trop géante sur tablette */
+        height: auto !important;
+        object-fit: cover;
+    }
+
+    /* 4. Adaptation des blocs de texte */
     #sous_titre {
-        margin-top: 20px;
+        height: auto !important;
+        flex-direction: column !important;
+        gap: 40px;
+        margin-top: 40px;
+        align-items: center;
     }
 
     .sous_texte {
+        width: 90% !important;
+        height: auto !important;
+    }
+
+    #resouce_texte {
+        height: auto !important;
         width: 90%;
-        margin: 0 auto;
+        margin: 40px auto;
     }
+}
 
-    .sous_texte p, #resouce_texte p {
-        font-size: 16px; /* Texte plus lisible sur mobile */
-    }
-
-    /* Footer Responsive */
+/* 5. Footer Responsif (Colonnes empilées) */
+@media screen and (max-width: 768px) {
     #Fin_du_site {
-        height: auto;
-        padding: 40px 0;
+        height: auto !important;
+        padding: 50px 20px;
     }
 
     .information {
-        flex-direction: column;
+        flex-direction: column !important;
+        height: auto !important;
+        gap: 40px;
         align-items: flex-start;
-        padding-left: 30px;
-        gap: 30px;
     }
 
     .forter_fin {
-        width: 90%;
-        height: auto;
+        width: 100% !important;
+        height: auto !important;
     }
 
-    /* Animation des icônes (mere) */
-    #mere {
-        flex-wrap: wrap;
-        max-height: none;
-        height: auto;
+    .reference p {
+        font-size: 14px;
+        text-align: center;
+        padding: 20px 0;
     }
 }
 
-/* Fix pour éviter le défilement horizontal (scroll bar inutile) */
-body {
-    overflow-x: hidden;
-    height: auto; /* Remplace le 120vh qui bloquait la page */
-}
-
-/* Correction des overflow cachés qui coupaient ton texte */
-#page_photo, .mini_photo, .sous_texte, #box_image, .mini_box_image {
+/* 6. Fix pour les textes et débordements */
+#page_photo, .mini_photo, .sous_texte, #box_image, .mini_box_image, #resouce_texte {
     overflow: visible !important;
     white-space: normal !important;
+}
+
+/* Empêcher les images de dépasser l'écran */
+img {
+    max-width: 100%;
+    height: auto;
 }
